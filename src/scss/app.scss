@@ -7,10 +7,11 @@ h1 {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ), url("../img/plegado.jpg");
-    height: 1000px;
 
+    height: 1000px;
+    padding-top: 300px;
+    
     h1 {
-        padding-top: 50px;
         text-align: center;
         color: white;
         font-size: 70px;
@@ -26,7 +27,7 @@ h1 {
 
     @media(max-width: 460px) {
         .portada {
-            height: 1000px;
+            height: 100px;
         }
         h1{
             font-size: 40px;
@@ -35,15 +36,21 @@ h1 {
             font-size: 20px;
         }
     }
+
     @media(min-width: 768px) {
         .portada {
-            height: 200px;
+            height: 800px;
         }
         h1{
             font-size: 50px;
         }
         p{
             font-size: 30px;
+        }
+        .map {
+            width: 500px;
+            height: 450px;
+            border: 0;
         }
     }
 }
