@@ -4,47 +4,86 @@ h1 {
 
 .portada {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
-  height: 1000px;
-  padding-top: 300px;
 }
 .portada h1 {
   text-align: center;
   color: white;
-  font-size: 70px;
-  font-weight: 50px;
 }
 .portada p {
   color: white;
-  font-size: 30px;
   padding-top: 50px;
   text-align: center;
 }
+.portada .logo {
+  width: 200px;
+  height: 200px;
+}
+
 @media (max-width: 460px) {
-  .portada .portada {
-    height: 100px;
+  .portada {
+    height: 750px;
   }
   .portada h1 {
     font-size: 40px;
+    padding-top: 50px;
   }
   .portada p {
     font-size: 20px;
   }
+  .portada .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .servicios {
+    height: 750px;
+  }
+  .servicios h1 {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+  }
 }
 @media (min-width: 768px) {
-  .portada .portada {
-    height: 800px;
+  .portada {
+    height: 950px;
   }
   .portada h1 {
     font-size: 50px;
+    padding-top: 150px;
   }
   .portada p {
     font-size: 30px;
   }
-  .portada .map {
-    width: 500px;
-    height: 450px;
-    border: 0;
+  .servicios {
+    height: 950px;
   }
+  .servicios h1 {
+    padding: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .portada {
+    height: 950px;
+  }
+  .portada h1 {
+    font-size: 90px;
+    padding-top: 200px;
+  }
+  .portada p {
+    padding-top: 0.4px;
+    font-size: 35px;
+  }
+  .servicios {
+    height: 950px;
+  }
+}
+blockquote {
+  width: 50%;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+blockquote li {
+  text-align: center;
+  font-size: 30px;
 }
 
 .map {

@@ -3,57 +3,117 @@ h1 {
 }
 
 .portada {
-    background-image:linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ), url("../img/plegado.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
 
-    height: 1000px;
-    padding-top: 300px;
-    
     h1 {
         text-align: center;
         color: white;
-        font-size: 70px;
-        font-weight: 50px;
     }
 
     p {
         color: white;
-        font-size: 30px;
         padding-top: 50px;
         text-align: center;
     }
 
-    @media(max-width: 460px) {
-        .portada {
-            height: 100px;
-        }
-        h1{
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+// UI
+
+//Mobile
+@media(max-width: 460px) {
+    .portada {
+        height: 750px;
+
+        h1 {
             font-size: 40px;
+            padding-top: 50px;
         }
+
         p {
             font-size: 20px;
         }
+        .logo{
+            width: 150px;
+            height: 150px;
+        }
     }
 
-    @media(min-width: 768px) {
-        .portada {
-            height: 800px;
-        }
-        h1{
-            font-size: 50px;
-        }
-        p{
-            font-size: 30px;
-        }
-        .map {
-            width: 500px;
-            height: 450px;
-            border: 0;
+    .servicios {
+        height: 750px;
+
+        h1 {
+            padding-top: 100px;
+            margin-bottom: 100px;
+            font-size: 20px;
         }
     }
 }
+
+//Tablet
+@media(min-width: 768px) {
+    .portada {
+        height: 950px;
+
+        h1 {
+            font-size: 50px;
+            padding-top: 150px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .servicios {
+        height: 950px;
+
+        h1 {
+            padding: 100px;
+        }
+    }
+}
+
+//Desktop
+@media(min-width: 1024px) {
+    .portada {
+        height: 950px;
+
+        h1 {
+            font-size: 90px;
+            padding-top: 200px;
+        }
+
+        p {
+            padding-top: .40px;
+            font-size: 35px;
+        }
+    }
+
+    .servicios {
+        height: 950px;
+    }
+}
+
+//Box
+blockquote {
+    width: 50%;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    li {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
 
 .map {
     width: 100%;
