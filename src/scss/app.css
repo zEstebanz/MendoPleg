@@ -113,4 +113,7 @@ h1 {
 /*Footer*/
 footer {
   padding-top: 100px;
+}
+footer h4 {
+  margin: 10px;
 }/*# sourceMappingURL=app.css.map */
