@@ -83,6 +83,11 @@ h1 {
     border: 0;
   }
 }
+/*Galeria*/
+#galeria {
+  padding: 400px;
+}
+
 @media (min-width: 1024px) {
   .portada {
     height: 950px;
@@ -116,4 +121,6 @@ footer {
 }
 footer h4 {
   margin: 10px;
-}/*# sourceMappingURL=app.css.map */
+}
+
+/*Galeria*//*# sourceMappingURL=app.css.map */
