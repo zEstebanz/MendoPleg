@@ -1,5 +1,7 @@
-h1 {
-  text-align: center;
+/*Global*/
+* {
+  padding: 0;
+  margin: 0;
 }
 
 .portada {
@@ -93,7 +95,7 @@ h1 {
     height: 950px;
   }
   .map {
-    margin-left: 25%;
+    margin-left: 33%;
     width: 650px;
     height: 550px;
     border: 0;
@@ -106,4 +108,14 @@ blockquote {
 blockquote li {
   text-align: center;
   font-size: 30px;
+}
+
+/*Contacto*/
+.form {
+  padding-bottom: 200px;
+}
+
+/*Footer*/
+footer {
+  padding-top: 100px;
 }/*# sourceMappingURL=app.css.map */
