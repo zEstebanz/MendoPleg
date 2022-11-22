@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 .portada {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
 }
@@ -101,15 +105,6 @@
     border: 0;
   }
 }
-blockquote {
-  width: 50%;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-blockquote li {
-  text-align: center;
-  font-size: 30px;
-}
-
 /*Contacto*/
 .form {
   padding-bottom: 200px;
