@@ -45,6 +45,9 @@ h1 {
     height: 450px;
     border: 0;
   }
+  .div-section {
+    height: 400px;
+  }
   .servicios {
     height: 750px;
   }
@@ -116,6 +119,9 @@ footer {
 }
 footer h4 {
   margin: 10px;
+}
+footer .footer {
+  padding-bottom: 30px;
 }
 
 /*Galeria*//*# sourceMappingURL=app.css.map */
