@@ -83,11 +83,6 @@ h1 {
     border: 0;
   }
 }
-/*Galeria*/
-#galeria {
-  padding: 400px;
-}
-
 @media (min-width: 1024px) {
   .portada {
     height: 950px;
