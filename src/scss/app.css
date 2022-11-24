@@ -48,13 +48,9 @@ h1 {
   .div-section {
     height: 400px;
   }
-  .servicios {
-    height: 750px;
-  }
   .servicios h1 {
     padding-top: 100px;
     margin-bottom: 100px;
-    font-size: 20px;
   }
   .map {
     width: 100%;
@@ -72,12 +68,6 @@ h1 {
   }
   .portada p {
     font-size: 30px;
-  }
-  .servicios {
-    height: 950px;
-  }
-  .servicios h1 {
-    padding: 100px;
   }
   .map {
     margin-left: 20%;
@@ -97,9 +87,6 @@ h1 {
   .portada p {
     padding-top: 0.4px;
     font-size: 35px;
-  }
-  .servicios {
-    height: 950px;
   }
   .map {
     margin-left: 33%;
