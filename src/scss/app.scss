@@ -132,8 +132,11 @@ blockquote {
 //      }
 //  }
 
+/* Ubicacion */
 /* 50/50 de ubicacion by flavio*/
-
+.container-ubicacion{
+    margin-top: 30px;
+}
 .contenedor {
     width: 100%;
     height: auto;
@@ -158,4 +161,11 @@ blockquote {
 
 footer{
     margin-top: 300px;
+    a{
+        text-decoration: none;
+        color: #6c757d;
+    }
+    a:hover{
+        color: #3c8995;
+    }
 }

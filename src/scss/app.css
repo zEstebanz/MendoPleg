@@ -92,7 +92,12 @@ blockquote li {
   border: 0;
 }
 
+/* Ubicacion */
 /* 50/50 de ubicacion by flavio*/
+.container-ubicacion {
+  margin-top: 30px;
+}
+
 .contenedor {
   width: 100%;
   height: auto;
@@ -116,4 +121,11 @@ blockquote li {
 }
 footer {
   margin-top: 300px;
+}
+footer a {
+  text-decoration: none;
+  color: #6c757d;
+}
+footer a:hover {
+  color: #3c8995;
 }/*# sourceMappingURL=app.css.map */
