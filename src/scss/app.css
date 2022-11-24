@@ -110,8 +110,16 @@ blockquote li {
 .caja {
   width: 40%;
   max-height: 300px;
-  margin: 5px;
+  margin: 50px;
   box-sizing: border-box;
+}
+.caja ul {
+  list-style: none;
+  margin-top: 100px;
+}
+.caja ul li {
+  margin: 30px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 780px) {
@@ -120,6 +128,7 @@ blockquote li {
   }
 }
 footer {
+  padding-top: 10px;
   margin-top: 300px;
 }
 footer a {
