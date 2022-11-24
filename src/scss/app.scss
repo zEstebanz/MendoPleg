@@ -169,3 +169,30 @@ footer{
         color: #3c8995;
     }
 }
+
+// Responsive en index by flavio
+
+.titulo-central {
+    text-align: center;
+    width: 90%;
+    max-height: 300px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+.caja-2{
+    width: 30%;
+    max-height: 533px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:780px) {
+    .caja-2 {
+        width: 90%;
+        max-height: 420px;
+    }
+}
