@@ -17,7 +17,7 @@ h1 {
         text-align: center;
     }
 
-    .logo{
+    .logo {
         width: 200px;
         height: 200px;
     }
@@ -39,7 +39,8 @@ h1 {
         p {
             font-size: 20px;
         }
-        .logo{
+
+        .logo {
             width: 150px;
             height: 150px;
         }
@@ -133,24 +134,28 @@ blockquote {
 
 /* 50/50 de ubicacion by flavio*/
 
-.contenedor{
+.contenedor {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
     justify-content: space-around;
-  }
-  
-  .caja{
+}
+
+.caja {
     width: 40%;
-    max-height: 400px;
+    max-height: 300px;
     margin: 5px;
     box-sizing: border-box;
-  }
-  
-  @media screen and (max-width:780px){
-    .caja{
-      width: 90%;
+}
+
+@media screen and (max-width:780px) {
+    .caja {
+        width: 90%;
     }
-  }
+}
+
+footer{
+    margin-top: 300px;
+}
