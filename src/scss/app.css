@@ -124,4 +124,26 @@ footer .footer {
   padding-bottom: 30px;
 }
 
-/*Galeria*//*# sourceMappingURL=app.css.map */
+/*Galeria*/
+/* 50/50 de ubicacion by flavio*/
+.contenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.caja {
+  width: 40%;
+  max-height: 0px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 780px) {
+  .caja {
+    width: 90%;
+  }
+}/*# sourceMappingURL=app.css.map */

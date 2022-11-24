@@ -159,3 +159,37 @@ footer {
 #galeria{
 
 }
+
+//Google Maps
+
+//  @media(min-width: 460px) {
+//      .map {
+//          width: 50%;
+//          height: 450px;
+//          border: 0;
+//      }
+//  }
+
+/* 50/50 de ubicacion by flavio*/
+
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+  
+  .caja{
+    width: 40%;
+    max-height: 00px;
+    margin: 5px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width:780px){
+    .caja{
+      width: 90%;
+    }
+  }
