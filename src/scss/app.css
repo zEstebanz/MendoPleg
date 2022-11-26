@@ -4,6 +4,10 @@ h1 {
 
 .portada {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .portada h1 {
   text-align: center;
@@ -163,4 +167,19 @@ footer a:hover {
     width: 30%;
     max-height: 420px;
   }
+}
+/* Nuestro clientes*/
+.nuestros-clientes {
+  height: auto;
+  margin-top: 200px;
+}
+.nuestros-clientes .gc {
+  background-color: #62165d;
+  margin-top: 50px;
+}
+.nuestros-clientes p {
+  font-size: 20px;
+}
+.nuestros-clientes img {
+  padding: 50px;
 }/*# sourceMappingURL=app.css.map */

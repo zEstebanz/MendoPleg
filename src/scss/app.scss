@@ -2,10 +2,15 @@ h1 {
     text-align: center;
 }
 
+//Navegacion
+
+
+
 .portada {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
 
+    user-select: none;
     h1 {
         text-align: center;
         color: white;
@@ -21,7 +26,6 @@ h1 {
         width: 200px;
         height: 200px;
     }
-
 }
 
 // UI
@@ -204,5 +208,21 @@ footer{
     .caja-2 {
         width: 30%;
         max-height: 420px;
+    }
+}
+
+/* Nuestro clientes*/
+.nuestros-clientes{
+    height: auto;
+    margin-top: 200px;
+    .gc{
+        background-color: #62165d;
+        margin-top: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
+    img{
+        padding: 50px;
     }
 }
