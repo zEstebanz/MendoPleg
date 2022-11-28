@@ -23,6 +23,22 @@ h1 {
   height: 200px;
 }
 
+/* Nuestro clientes*/
+.nuestros-clientes {
+  height: auto;
+  margin-top: 200px;
+}
+.nuestros-clientes .gc {
+  background-color: #62165d;
+  margin-top: 50px;
+}
+.nuestros-clientes p {
+  font-size: 20px;
+}
+.nuestros-clientes img {
+  padding: 50px;
+}
+
 @media (max-width: 460px) {
   .portada {
     height: 750px;
@@ -168,18 +184,8 @@ footer a:hover {
     max-height: 420px;
   }
 }
-/* Nuestro clientes*/
-.nuestros-clientes {
-  height: auto;
-  margin-top: 200px;
-}
-.nuestros-clientes .gc {
-  background-color: #62165d;
+/** Contacto **/
+.form {
   margin-top: 50px;
-}
-.nuestros-clientes p {
-  font-size: 20px;
-}
-.nuestros-clientes img {
-  padding: 50px;
+  height: auto;
 }/*# sourceMappingURL=app.css.map */

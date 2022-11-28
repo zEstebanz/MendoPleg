@@ -38,94 +38,110 @@
         </div>
     </nav>
 
-    <section>
-        <section class="form">
+    <!-- Formulario -->
+    <section class="form">
 
-            <h1>Contacto</h1>
+        <h1>Contacto</h1>
+        <!-- <form action="" method="post">
+            <h5>Nombre</h5>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <h5>Email</h5>
+            <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
+            <h5>Mensaje</h5>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             <br>
-            <form>
-                <form action="">Nombre</form>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                <form action="">Email</form>
-                <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
-                <form action="">Mensaje</form>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <br>
-                <textarea name="comprobar" id="comprobar" cols="8" rows="0"></textarea>
-                <br>
-                <button>Enviar</button>
-                <button>Resetear</button>
-            </form>
-        </section>
+            <textarea name="comprobar" id="comprobar" cols="8" rows="0"></textarea>
+            <br>
+            <button>Enviar</button>
+            <button>Resetear</button>
+        </form> -->
 
-        <!-- Footer -->
-        <footer class="text-center text-lg-start bg-light text-muted">
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Nombre <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Email <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          
+    </section>
+    <!-- Fin Formulario -->
 
-            <section class="">
-                <div class="container text-center text-md-start mt-5">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
 
-                    <div class="row mt-3">
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
 
-                            <h3 class="text-uppercase fw-bold mb-4">
-                               <img src="src/img/men.gif" alt="Logo" width="30px" height="30px"> MendoPleg S.A.
-                            </h3>
-                            <p>Soluciones Metalurgicas</p>
-                        </div>
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-                        <!-- Correo -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Correos
-                            </h6>
-
-                            <p>
-                            <form action="">Información General:</form>
-                            <a
-                                href="mailto:info@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">info@mendopleg.com.ar</a>
-                            </p>
-                            <p>
-                            <form action="">Ventas:</form>
-
-                            <a
-                                href="mailto:ventas@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">ventas@mendopleg.com.ar</a>
-                            </p>
-
-
-                            <p>
-                            <form action="">Oficina Técnica:</form>
-
-                            <a
-                                href="mailto:otecnica@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">otecnica@mendopleg.com.ar</a>
-                            </p>
-                        </div>
-
-                        <!-- Telefono -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                            <h6 class="text-uppercase fw-bold mb-4">Telefono</h6>
-                            <a href="tel:+54 261 4317741<">261-4317741</a>
-                            <br>
-                            <a href="tel:+54 261 4320713<">261-4320713</a>
-
-                        </div>
+                        <h3 class="text-uppercase fw-bold mb-4">
+                            <img src="src/img/men.gif" alt="Logo" width="30px" height="30px"> MendoPleg S.A.
+                        </h3>
+                        <p>Soluciones Metalurgicas</p>
                     </div>
 
+                    <!-- Correo -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Correos
+                        </h6>
+
+                        <p>
+                        <form action="">Información General:</form>
+                        <a
+                            href="mailto:info@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">info@mendopleg.com.ar</a>
+                        </p>
+                        <p>
+                        <form action="">Ventas:</form>
+
+                        <a
+                            href="mailto:ventas@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">ventas@mendopleg.com.ar</a>
+                        </p>
+
+
+                        <p>
+                        <form action="">Oficina Técnica:</form>
+
+                        <a
+                            href="mailto:otecnica@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">otecnica@mendopleg.com.ar</a>
+                        </p>
+                    </div>
+
+                    <!-- Telefono -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Telefono</h6>
+                        <a href="tel:+54 261 4317741<">261-4317741</a>
+                        <br>
+                        <a href="tel:+54 261 4320713<">261-4320713</a>
+
+                    </div>
                 </div>
-            </section>
 
-
-            <!-- Copyright -->
-            <div class="text-center text-light p-4" style="background-color: rgba(0, 0, 0, 0.873);">
-                © 2023 Trabajo Practico Escolar:
-                <a class="text-reset fw-bold" href="#"><br>MendoPleg</a>
             </div>
-            <!-- Copyright -->
+        </section>
 
-        </footer>
-        <!-- Footer -->
+
+        <!-- Copyright -->
+        <div class="text-center text-light p-4" style="background-color: rgba(0, 0, 0, 0.873);">
+            © 2023 Trabajo Practico Escolar:
+            <a class="text-reset fw-bold" href="#"><br>MendoPleg</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
 </body>
 
