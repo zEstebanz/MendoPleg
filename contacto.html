@@ -56,21 +56,24 @@
             <button>Resetear</button>
         </form> -->
 
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>Nombre <input type="text" name="name" /></label>
-            </p>
-            <p>
-              <label>Email <input type="email" name="email" /></label>
-            </p>
-            <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
-          
+        <form action="/action_page.php">
+            
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingresar Nombre" name="name">
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresar Email" name="email">
+            </div>
+            
+            <label for="comment">Mensaje:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+
+            <button type="submit" class="btn btn-primary ">Enviar</button>
+        </form>
+
     </section>
     <!-- Fin Formulario -->
 
