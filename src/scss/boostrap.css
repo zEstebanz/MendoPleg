@@ -4322,6 +4322,7 @@ fieldset:disabled .btn {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    z-index: 11;
     align-items: center;
     justify-content: space-between;
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)

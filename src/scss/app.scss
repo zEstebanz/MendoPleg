@@ -1,12 +1,51 @@
 h1 {
     text-align: center;
 }
-p{
+
+.titulo-central {
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    h1::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #ddd;
+        bottom: 1px;
+        left: calc(50% - 60px);
+    }
+
+    h1::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: #3498db;
+        bottom: 0;
+        left: calc(50% - 20px);
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+p {
     text-align: center;
 }
 
 //Navegacion
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
 }
@@ -17,6 +56,7 @@ p{
             rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
 
     user-select: none;
+
     h1 {
         text-align: center;
         color: white;
@@ -35,17 +75,16 @@ p{
 }
 
 /* Nuestro clientes*/
-.nuestros-clientes{
+.nuestros-clientes {
     height: auto;
-    margin-top: 200px;
-    .gc{
+    margin-top: 50px;
+
+    .gc {
         background-color: #62165d;
         margin-top: 50px;
     }
-    p{
-        font-size: 20px;
-    }
-    img{
+
+    img {
         padding: 50px;
     }
 }
@@ -141,6 +180,39 @@ blockquote {
     }
 }
 
+.icon-box i {
+    color: #3498db;
+    font-size: 28px;
+}
+
+.icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.icon-box h4 a {
+    color: #384046;
+    transition: ease-in-out 0.3s;
+}
+
+.icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.icon-box:hover h4 a,
+.icon-box:hover .icon i {
+    color: #3498db;
+}
+
+
 .map {
     width: 100%;
     height: 450px;
@@ -160,17 +232,18 @@ blockquote {
     justify-content: space-around;
 }
 
-.caja {
+.box{
     width: 90%;
     max-height: 400px;
     margin: 15px 5px;
     box-sizing: border-box;
-    .txt-30{
+
+    .txt-30 {
         font-size: 30px;
     }
 }
 
-.bloque-vertical{
+.bloque-vertical {
     width: 100%;
     height: 100%;
     display: flex;
@@ -178,23 +251,33 @@ blockquote {
 }
 
 @media screen and (min-width:999px) {
-    .caja {
+    .box {
         width: 40%;
     }
 }
 
-footer{
+footer {
     padding-top: 10px;
     margin-top: 300px;
-    a{
+
+    a {
         text-decoration: none;
         color: #6c757d;
     }
-    a:hover{
+
+    a:hover {
         color: #3c8995;
     }
-    h3{
+
+    h3 {
         font-size: 25px;
+    }
+
+    .ico {
+        img {
+            width: 15px;
+            height: 15px;
+        }
     }
 }
 
@@ -207,34 +290,35 @@ footer{
     margin-top: 30px;
     box-sizing: border-box;
 }
-.caja-2{
+
+.box-2 {
     width: 90%;
     max-height: 533px;
     margin-bottom: 5px;
     box-sizing: border-box;
 }
 
-.centrar{
+.centrar {
     display: flex;
     justify-content: center;
 }
 
 @media screen and (min-width:999px) {
-    .caja-2 {
+    .box-2 {
         width: 30%;
         max-height: 420px;
     }
 }
 
 /** Contacto **/
-.form{
+.form {
     margin-top: 50px;
     height: auto;
 }
 
 /* Gotop */
 
-.go-top-container {
+.button-WhatsApp-container {
     position: fixed;
     bottom: 4rem;
     right: 1rem;
@@ -243,7 +327,7 @@ footer{
     z-index: -1;
 }
 
-.go-top-button {
+.WhatsApp-button {
     width: 0rem;
     height: 0rem;
     border-radius: 5px;
@@ -255,7 +339,7 @@ footer{
     z-index: -1;
 }
 
-.go-top-button i {
+.WhatsApp-button i {
     position: absolute;
     font-size: 1.7rem;
     top: 48%;
@@ -270,7 +354,7 @@ footer{
     z-index: 10;
 }
 
-.show .go-top-button {
+.show .WhatsApp-button {
     animation: popup .3s ease-in-out;
     width: 3rem;
     height: 3rem;
@@ -292,6 +376,5 @@ footer{
         height: 3rem;
     }
 
-    100% {
-    }
+    100% {}
 }

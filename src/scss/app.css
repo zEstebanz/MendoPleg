@@ -2,6 +2,38 @@ h1 {
   text-align: center;
 }
 
+.titulo-central h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.titulo-central h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.titulo-central h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #3498db;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.titulo-central p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 p {
   text-align: center;
 }
@@ -35,14 +67,11 @@ p {
 /* Nuestro clientes*/
 .nuestros-clientes {
   height: auto;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .nuestros-clientes .gc {
   background-color: #62165d;
   margin-top: 50px;
-}
-.nuestros-clientes p {
-  font-size: 20px;
 }
 .nuestros-clientes img {
   padding: 50px;
@@ -115,6 +144,38 @@ blockquote li {
   font-size: 30px;
 }
 
+.icon-box i {
+  color: #3498db;
+  font-size: 28px;
+}
+
+.icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.icon-box h4 a {
+  color: #384046;
+  transition: ease-in-out 0.3s;
+}
+
+.icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.icon-box:hover h4 a,
+.icon-box:hover .icon i {
+  color: #3498db;
+}
+
 .map {
   width: 100%;
   height: 450px;
@@ -132,13 +193,13 @@ blockquote li {
   justify-content: space-around;
 }
 
-.caja {
+.box {
   width: 90%;
   max-height: 400px;
   margin: 15px 5px;
   box-sizing: border-box;
 }
-.caja .txt-30 {
+.box .txt-30 {
   font-size: 30px;
 }
 
@@ -150,7 +211,7 @@ blockquote li {
 }
 
 @media screen and (min-width: 999px) {
-  .caja {
+  .box {
     width: 40%;
   }
 }
@@ -168,6 +229,10 @@ footer a:hover {
 footer h3 {
   font-size: 25px;
 }
+footer .ico img {
+  width: 15px;
+  height: 15px;
+}
 
 .titulo-central {
   text-align: center;
@@ -177,7 +242,7 @@ footer h3 {
   box-sizing: border-box;
 }
 
-.caja-2 {
+.box-2 {
   width: 90%;
   max-height: 533px;
   margin-bottom: 5px;
@@ -190,7 +255,7 @@ footer h3 {
 }
 
 @media screen and (min-width: 999px) {
-  .caja-2 {
+  .box-2 {
     width: 30%;
     max-height: 420px;
   }
@@ -202,7 +267,7 @@ footer h3 {
 }
 
 /* Gotop */
-.go-top-container {
+.button-WhatsApp-container {
   position: fixed;
   bottom: 4rem;
   right: 1rem;
@@ -211,7 +276,7 @@ footer h3 {
   z-index: -1;
 }
 
-.go-top-button {
+.WhatsApp-button {
   width: 0rem;
   height: 0rem;
   border-radius: 5px;
@@ -223,7 +288,7 @@ footer h3 {
   z-index: -1;
 }
 
-.go-top-button i {
+.WhatsApp-button i {
   position: absolute;
   font-size: 1.7rem;
   top: 48%;
@@ -238,7 +303,7 @@ footer h3 {
   z-index: 10;
 }
 
-.show .go-top-button {
+.show .WhatsApp-button {
   -webkit-animation: popup 0.3s ease-in-out;
           animation: popup 0.3s ease-in-out;
   width: 3rem;
