@@ -2,6 +2,15 @@ h1 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
 .portada {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
   -webkit-user-select: none;
@@ -156,13 +165,15 @@ footer a {
 footer a:hover {
   color: #3c8995;
 }
+footer h3 {
+  font-size: 25px;
+}
 
 .titulo-central {
   text-align: center;
   width: 100%;
   max-height: 300px;
   margin-top: 30px;
-  margin-bottom: 40px;
   box-sizing: border-box;
 }
 

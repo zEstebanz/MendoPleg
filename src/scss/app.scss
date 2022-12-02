@@ -1,9 +1,17 @@
 h1 {
     text-align: center;
 }
+p{
+    text-align: center;
+}
 
 //Navegacion
+.navbar{
+    position: fixed;
+    top: 0;
+}
 
+//Portada
 .portada {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
@@ -185,6 +193,9 @@ footer{
     a:hover{
         color: #3c8995;
     }
+    h3{
+        font-size: 25px;
+    }
 }
 
 // Responsive en index by flavio
@@ -194,7 +205,6 @@ footer{
     width: 100%;
     max-height: 300px;
     margin-top: 30px;
-    margin-bottom: 40px;
     box-sizing: border-box;
 }
 .caja-2{
