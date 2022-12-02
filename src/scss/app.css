@@ -227,10 +227,10 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: #6c757d;
+  color: #3c8995;
 }
 footer a:hover {
-  color: #3c8995;
+  color: #2aaabd;
 }
 footer h3 {
   font-size: 25px;
@@ -238,6 +238,10 @@ footer h3 {
 footer .ico img {
   width: 15px;
   height: 15px;
+}
+footer .email-div h6 {
+  color: #384046;
+  margin-top: 10px;
 }
 
 .titulo-central {
