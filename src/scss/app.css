@@ -214,7 +214,6 @@ footer h3 {
 .go-top-button {
   width: 0rem;
   height: 0rem;
-  background: #6c757d;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
@@ -230,13 +229,8 @@ footer h3 {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: black;
   font-size: 30px;
   transition: 0.2s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 /* Elemento de js*/

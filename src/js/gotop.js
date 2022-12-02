@@ -6,10 +6,3 @@ window.onscroll = function() {
         document.querySelector('.go-top-container').classList.remove('show');
     }
 }
-
-document.querySelector('.go-top-container').addEventListener('click', () => { // Funcion flecha de click
-    window.scrollTo({
-        top: 0, //Nos lleva hacia Arriba
-        behavior: 'smooth' // Efecto suave hacia arriba
-    });
-});
