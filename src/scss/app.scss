@@ -12,6 +12,12 @@ h1 {
         position: relative;
     }
 
+    p {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+
     h1::before {
         content: "";
         position: absolute;
@@ -23,21 +29,17 @@ h1 {
         left: calc(50% - 60px);
     }
 
-    h1::after {
+     h1::after {
         content: "";
         position: absolute;
         display: block;
         width: 40px;
         height: 3px;
-        background: #3498db;
+        background: #3c3f94;
         bottom: 0;
         left: calc(50% - 20px);
     }
 
-    p {
-        font-weight: 600;
-        font-size: 20px;
-    }
 }
 
 p {
@@ -74,7 +76,29 @@ p {
     }
 }
 
-/* Nuestro clientes*/
+/* Nuestros Servicios*/
+
+.services {
+
+    .icon-box {
+        padding: 30px;
+        border-radius: 6px;
+        background: #f8f9fa;
+        transition: ease-in-out 0.3s;
+    }
+
+
+    .icon-box h4 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #384046;
+    }
+
+}
+
+
+/* Nuestros clientes*/
 .nuestros-clientes {
     height: auto;
     margin-top: 50px;
@@ -108,16 +132,6 @@ p {
         .logo {
             width: 150px;
             height: 150px;
-        }
-    }
-
-    .servicios {
-        height: 1250px;
-
-        h1 {
-            padding-top: 100px;
-            margin-bottom: 100px;
-            font-size: 20px;
         }
     }
 }
@@ -232,7 +246,7 @@ blockquote {
     justify-content: space-around;
 }
 
-.box{
+.box {
     width: 90%;
     max-height: 400px;
     margin: 15px 5px;
