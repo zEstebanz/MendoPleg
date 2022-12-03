@@ -82,6 +82,7 @@ p {
 }
 .nuestros-clientes img {
   padding: 50px;
+  width: 40vh;
 }
 
 @media (max-width: 460px) {
@@ -99,6 +100,9 @@ p {
   .portada .logo {
     width: 150px;
     height: 150px;
+  }
+  .nuestros-clientes img {
+    width: 30vh;
   }
 }
 @media (min-width: 768px) {

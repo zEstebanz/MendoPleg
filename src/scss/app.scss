@@ -100,6 +100,7 @@ p {
 
     img {
         padding: 50px;
+        width: 40vh;
     }
 }
 
@@ -122,6 +123,11 @@ p {
         .logo {
             width: 150px;
             height: 150px;
+        }
+    }
+    .nuestros-clientes{
+        img{
+            width: 30vh;
         }
     }
 }
