@@ -2,6 +2,11 @@ h1 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
+//Titulos
 .titulo-central {
 
     h1 {
@@ -30,9 +35,6 @@ h1 {
 
 }
 
-p {
-    text-align: center;
-}
 
 //Navegacion
 .navbar {
@@ -43,13 +45,18 @@ p {
 //Portada
 .portada {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
+            rgba(0, 0, 0, 0.5)), url("../img/galeria/textura.jpg");
 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     user-select: none;
+    height: 100vh;
 
     h1 {
         text-align: center;
         color: white;
+        padding-top: 25vh;
     }
 
     p {
@@ -93,6 +100,7 @@ p {
     height: auto;
     margin-top: 50px;
 
+
     .gc {
         background-color: #62165d;
         margin-top: 50px;
@@ -109,12 +117,14 @@ p {
 //Mobile
 @media(max-width: 460px) {
     .portada {
-        height: 650px;
+        height: 800px;
         padding-top: 60px;
-
+        
+        background-position: center;
+        
         h1 {
             font-size: 40px;
-            padding-top: 50px;
+            padding-top: 150px;
         }
 
         p {
@@ -137,11 +147,9 @@ p {
 //Tablet
 @media(min-width: 768px) {
     .portada {
-        height: 900px;
 
         h1 {
             font-size: 50px;
-            padding-top: 150px;
         }
 
         p {
@@ -161,11 +169,9 @@ p {
 //Desktop
 @media(min-width: 1024px) {
     .portada {
-        height: 950px;
 
         h1 {
             font-size: 90px;
-            padding-top: 200px;
         }
 
         p {
@@ -434,13 +440,14 @@ footer {
         transition: 0.4s;
     }
 
-     .galeria-info {
+    .galeria-info {
         background: #fff;
         text-align: center;
         padding: 30px;
         border-radius: 0 0 3px 3px;
 
-        h4, a {
+        h4,
+        a {
             font-size: 20px;
             line-height: 1px;
             color: #000;

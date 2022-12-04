@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+}
+
 .titulo-central h1 {
   font-size: 32px;
   font-weight: 600;
@@ -24,25 +28,26 @@ h1 {
   left: calc(50% - 60px);
 }
 
-p {
-  text-align: center;
-}
-
 .navbar {
   position: fixed;
   top: 0;
 }
 
 .portada {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/plegado.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/galeria/textura.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  height: 100vh;
 }
 .portada h1 {
   text-align: center;
   color: white;
+  padding-top: 25vh;
 }
 .portada p {
   color: white;
@@ -87,12 +92,13 @@ p {
 
 @media (max-width: 460px) {
   .portada {
-    height: 650px;
+    height: 800px;
     padding-top: 60px;
+    background-position: center;
   }
   .portada h1 {
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 150px;
   }
   .portada p {
     font-size: 20px;
@@ -106,12 +112,8 @@ p {
   }
 }
 @media (min-width: 768px) {
-  .portada {
-    height: 900px;
-  }
   .portada h1 {
     font-size: 50px;
-    padding-top: 150px;
   }
   .portada p {
     font-size: 30px;
@@ -124,12 +126,8 @@ p {
   }
 }
 @media (min-width: 1024px) {
-  .portada {
-    height: 950px;
-  }
   .portada h1 {
     font-size: 90px;
-    padding-top: 200px;
   }
   .portada p {
     padding-top: 0.4px;
@@ -379,7 +377,8 @@ footer .email-div h6 {
   padding: 30px;
   border-radius: 0 0 3px 3px;
 }
-.galeria .galeria-info h4, .galeria .galeria-info a {
+.galeria .galeria-info h4,
+.galeria .galeria-info a {
   font-size: 20px;
   line-height: 1px;
   color: #000;
