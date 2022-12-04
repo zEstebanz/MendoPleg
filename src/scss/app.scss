@@ -42,7 +42,7 @@ p {
     top: 0;
 }
 
-//Portada
+/* Portada */
 .portada {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url("../img/galeria/textura.jpg");
@@ -72,7 +72,6 @@ p {
 }
 
 /* Nuestros Servicios*/
-
 .services {
 
     padding-bottom: 100px;
@@ -94,7 +93,6 @@ p {
 
 }
 
-
 /* Nuestros clientes*/
 .nuestros-clientes {
     height: auto;
@@ -112,16 +110,16 @@ p {
     }
 }
 
-// UI
+/* ---UI Resposive--- */
 
 //Mobile
 @media(max-width: 460px) {
     .portada {
         height: 800px;
         padding-top: 60px;
-        
+
         background-position: center;
-        
+
         h1 {
             font-size: 40px;
             padding-top: 150px;
@@ -183,20 +181,9 @@ p {
     .servicios {
         height: 950px;
     }
+
 }
 
-//Box
-blockquote {
-    width: 50%;
-    box-shadow:
-        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-
-    li {
-        text-align: center;
-        font-size: 30px;
-    }
-}
 
 .icon-box i {
     color: #3498db;
@@ -231,14 +218,14 @@ blockquote {
 }
 
 
+
+
+/* Ubicacion */
 .map {
     width: 100%;
     height: 450px;
     border: 0;
 }
-
-
-/* Ubicacion */
 
 /* 50/50 de ubicacion by flavio*/
 .contenedor {
@@ -274,6 +261,7 @@ blockquote {
     }
 }
 
+/* Footer */
 footer {
     padding-top: 10px;
     margin-top: 50px;
@@ -457,4 +445,65 @@ footer {
             text-decoration: none;
         }
     }
+
+    .modal{
+        display: none;        
+    }
+
+    .modal:target{
+        display: block;
+        position: fixed;
+        background: rgb(0,0,0, 0.8);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .modal h3{
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .img{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img a{
+        color: #fff;
+        font-size: 40px;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .img a:nth-child(2){
+        margin: 0;
+        height: 100%;
+        flex-shrink: 2;
+    }
+    .img img{
+        width: 500px;
+        height: 100%;
+        margin-top: 10vh;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .close{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 15vh auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 35px;
+        color: #fff;
+        padding: 5px;
+        border-radius: 50%;
+        line-height: 25px;
+    }
+
 }
