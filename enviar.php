@@ -9,6 +9,7 @@ $message = $_POST['message'];
 
 $contenido = "Nombre: " . $name . "\nCorreo: " . $email . "\nTeléfono: " . $phone . "\nMensaje: " . $message;
 mail($para, "Contacto", $contenido);
+
 header("Location:index.html");
 
 ?>
