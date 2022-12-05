@@ -43,28 +43,30 @@
     <!-- Formulario -->
     <section class="form">
         <h1 class="titulo-central">Contacto</h1>
-        <form action="email.php" method="post">
+
+        <form action="enviar.php" method="post">
             
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="name" placeholder="Ingresar Nombre" name="name">
+                <input type="text" class="form-control" id="name" placeholder="Ingresar Nombre" name="name" required>
             </div>
 
             <div class="mb-3 mt-3">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingresar Email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Ingresar Email" name="email" required>
             </div>
         
             <div class="mb-3 mt-3">
                 <label for="phone" class="form-label">Número Telefónico: </label>
-                <input type="phone" class="form-control" id="phone" placeholder="Ingresar Número" name="phone">
+                <input type="phone" class="form-control" id="phone" placeholder="Ingresar Número" name="phone" required>
             </div>
 
             <label for="message">Mensaje:</label>
-            <textarea class="form-control message" rows="5" id="message" name="message"></textarea>
+            <textarea class="form-control message" rows="5" id="message" name="message" required></textarea>
 
-            <button type="submit" class="btn btn-primary ">Enviar</button>
+            <button type="submit" class="btn btn-primary" value="ENVIAR" id="button">Enviar</button>
         </form>
+
     </section>
     <!-- Fin Formulario -->
 
