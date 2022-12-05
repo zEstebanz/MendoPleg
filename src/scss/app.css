@@ -112,6 +112,10 @@ p {
   .nuestros-clientes img {
     width: 30vh;
   }
+  .container-ubicacion .info {
+    font-size: 1px;
+    color: red;
+  }
 }
 @media (min-width: 768px) {
   .portada h1 {
@@ -179,6 +183,13 @@ p {
 }
 
 /* 50/50 de ubicacion by flavio*/
+.container-ubicacion {
+  background-color: #f8f9fa;
+}
+.container-ubicacion .info {
+  font-size: 20px;
+}
+
 .contenedor {
   width: 100%;
   height: auto;
