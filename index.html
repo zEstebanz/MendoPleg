@@ -23,7 +23,7 @@
 <body>
 
     <!-- Navegacion Principal -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"> <img src="src/img/men.gif" alt="" width="40" height="34"
                     class="d-inline-block align-text-top">
@@ -34,16 +34,64 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="#inicio">Inicio</a>
                     <a class="nav-link" href="#services">Servicios</a>
                     <a class="nav-link" href="#galeria">Galeria</a>
                     <a class="nav-link" href="#nuestros-clientes">Clientes</a>
-                    <a class="nav-link" href="contacto.html">Contactos</a>
                     <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    <a class="nav-link" href="#footer">Contactos</a>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- Navegacion Principal -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio"><img src="src/img/men.gif" alt="mengopleg" width="45px" height="40px">MendoPleg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color:white;">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content flex-grow-1 pe-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#services">Nuestros Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#galeria">Galeria</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#clientes">Nuestros Clientes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#ubicacion">Ubicación</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#footer">Contactos</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
+
     <!-- Fin Navegacion Principal -->
 
     <!-- Boton WhatsApp -->
@@ -57,7 +105,7 @@
     <!-- Fin Boton WhatsApp -->
 
     <!-- Portada -->
-    <section class="portada">
+    <section class="portada" id="inicio">
         <h1> <img class="logo" src="src/img/men.gif" alt="Mendopleg">
             <br> Industria Mendopleg S. A.
         </h1>
@@ -409,7 +457,7 @@
     <!--Fin Galeria -->
 
     <!-- Nuestros Clientes -->
-    <section class="nuestros-clientes" id="nuestros-clientes">
+    <section class="nuestros-clientes" id="clientes">
         <div class="contenedor">
             <div class="titulo-central">
                 <h1>Nuestros Clientes</h1>
@@ -476,7 +524,7 @@
     <!-- Fin Ubicacion -->
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start bg-light text-muted" id="footer">
 
         <section>
             <div class="container text-center text-md-start mt-5">
@@ -545,7 +593,7 @@
         <!-- Copyright -->
 
         <div>
-            <h5>derechos de iconos</h5>
+            <h5>Derechos de iconos</h5>
 
             <a href="https://www.flaticon.es/iconos-gratis/triptico" title="triptico iconos">Triptico iconos creados
                 por Freepik - Flaticon</a>

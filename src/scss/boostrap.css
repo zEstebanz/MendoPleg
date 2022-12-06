@@ -7498,9 +7498,18 @@ fieldset:disabled .btn {
 .offcanvas.offcanvas-end {
     top: 0;
     right: 0;
-    width: var(--bs-offcanvas-width);
+    width: 400px;
     border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
     transform: translateX(100%)
+}
+@media only screen and (max-width: 815px) {
+    .offcanvas.offcanvas-end {
+        top: 0;
+        right: 0;
+        width: 200px;
+        border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+        transform: translateX(100%)
+    }
 }
 
 .offcanvas.offcanvas-top {
