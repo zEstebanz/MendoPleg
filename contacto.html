@@ -46,7 +46,7 @@
 
         <!-- action="enviar.php" method="post" -->
         <form name="form" netlify>
-            
+
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre:</label>
                 <input type="text" class="form-control" id="name" placeholder="Ingresar Nombre" name="name" required>
@@ -56,17 +56,29 @@
                 <label for="email" class="form-label">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingresar Email" name="email" required>
             </div>
-        
+
             <div class="mb-3 mt-3">
-                <label for="phone" class="form-label">Número Telefónico: </label>
+                <label for="phone" class="form-label">Número Telefónico:</label>
                 <input type="phone" class="form-control" id="phone" placeholder="Ingresar Número" name="phone" required>
             </div>
 
             <label for="message">Mensaje:</label>
             <textarea class="form-control message" rows="5" id="message" name="message" required></textarea>
 
-            <button type="submit" class="btn btn-primary" value="ENVIAR" id="button">Enviar</button>
+            <button type="submit" class="btn btn-primary" value="Enviar" id="enviarCorreo">Enviar</button>
         </form>
+
+        <script>
+            const btnEnvio = document.getElementById('enviarCorreo');
+            btnEnvio.addEventListener('click', function (e) {
+                e.preventDefault();
+                const email = document.getElementById('email').value;
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const message = document.getElementById('message').value;
+                window.location.href = `mailto:estebanoller73@gmail.com?subject=Asunto&body=Nombre%3A${name}%0ACorreo%3A${email}%0ATeléfono%3A${phone}%0AMensaje%3A${message}`;
+            })
+        </script>
 
     </section>
     <!-- Fin Formulario -->
