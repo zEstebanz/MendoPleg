@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#footer">Contactos</a>
+                            <a class="nav-link active" aria-current="page" href="#form">Contactos</a>
                         </li>
 
                         <li class="nav-item">
@@ -96,13 +96,12 @@
             </div>
         </div>
     </nav>
-
     <!-- Fin Navegacion Principal -->
 
     <!-- Boton WhatsApp -->
     <div class="button-WhatsApp-container">
         <div class="WhatsApp-button">
-            <a href="https://api.whatsapp.com/send?phone=Tu-n%C3%B9mero-aqu%C3%AD" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=2612528276" target="_blank">
                 <img src="src/img/ico/what.png" alt="whatsapp" width="100%" height="100%">
             </a>
         </div>
@@ -499,35 +498,60 @@
     </section>
     <!-- Fin Nuestros Clientes -->
 
-    <!-- Ubicacion -->
-    <section class="container-ubicacion" id="ubicacion">
-        <br>
-        <div class="titulo-central">
-            <h1>Ubicación</h1>
-        </div>
+     <!-- Formulario -->
+     <section id="form">
+        <div class="content-form">
 
-        <div class="contenedor">
-            <div>
-                <div class="bloque-vertical">
-                    <p class="txt-30">
-                    <ul class="info">
-                        <li>Dirección: Independencia 665</li>
-                        <li>Godoy Cruz - Mendoza - Argentina</li>
-                        <li>Horarios de Atención: Lun-Vie 8:30-17:30</li>
+            <div class="titulo-central">
+                <h1>Contactos y Ubicación</h1>
+            </div>
+
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Esperamos Tu Consulta</h3>
+                    <form name="form">
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="fullname" id="name" placeholder="Tu Nombre Completo" required>
+                        </p>
+
+                        <p>
+                            <label>Número Teléfono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Tu Número" required>
+                        </p>
+
+                        <p class="block">
+                            <label>Tu Mensaje aqui</label>
+                            <textarea name="message" id="message" rows="3" placeholder="..."></textarea>
+                        </p>
+
+                        <p class="block">
+
+                            <button type="submit" class="btn btn-primary" value="Enviar"
+                                id="enviarCorreo">Enviar</button>
+
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Ubicación</h4>
+                    <ul>
+                        <li><i></i> Independencia 665</li>
+                        <li><i></i> Godoy Cruz - Mendoza - Argentina </li>
+                        <li><i></i> Horarios de Atención: Lun-Vie 8:30-17:30</li>
                     </ul>
-                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6697.278745048111!2d-68.826226!3d-32.934125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c956f0c6d178e1!2sInd%20Mendopleg%20S.A.!5e0!3m2!1ses!2sus!4v1668796006722!5m2!1ses!2sus"
+                        allowfullscreen="" loading="lazy" class="map"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </div>
             </div>
 
-            <div class="div-map box">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6697.278745048111!2d-68.826226!3d-32.934125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c956f0c6d178e1!2sInd%20Mendopleg%20S.A.!5e0!3m2!1ses!2sus!4v1668796006722!5m2!1ses!2sus"
-                    allowfullscreen="" loading="lazy" class="map" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </div>
     </section>
-    <!-- Fin Ubicacion -->
-
+    <!-- Fin Formulario -->
+    
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted" id="footer">
 
@@ -599,5 +623,6 @@
 </body>
 
 <script src="src/js/gotop.js"></script>
+<script src="src/js/enviar.js"></script>
 
 </html>

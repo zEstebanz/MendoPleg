@@ -19,21 +19,53 @@
 
 <body>
 
-    <!-- Navegacion Principal-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navegacion Principal -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="src/img/men.gif" alt="" width="30" height="24"
-                    class="d-inline-block align-text-top">
-                MendoPleg</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#inicio"><img src="src/img/men.gif" alt="mengopleg" width="45px"
+                    height="40px">MendoPleg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                    <a class="nav-link" href="ubicacion.html">Ubicación</a>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color:white;">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content flex-grow-1 pe-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#services">Nuestros Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#galeria">Galeria</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#clientes">Nuestros Clientes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#ubicacion">Ubicación</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contactos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="derechos.html">Agradecimientos</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -41,10 +73,10 @@
     <!-- Fin Navegacion Principal -->
 
     <!-- Formulario -->
-    <section class="form">
+    <!-- <section class="form">
         <h1 class="titulo-central">Contacto</h1>
 
-        <!-- action="enviar.php" method="post" -->
+      
         <form name="form" netlify>
 
             <div class="mb-3">
@@ -80,9 +112,63 @@
             })
         </script>
 
-    </section>
+    </section> -->
     <!-- Fin Formulario -->
 
+    <!-- Formulario -->
+    <section id="form">
+        <div class="content-form">
+
+            <div class="titulo-central">
+                <h1>Contactos y Ubicación</h1>
+            </div>
+
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Esperamos Tu Consulta</h3>
+                    <form name="form">
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="fullname" id="name" placeholder="Tu Nombre Completo" required>
+                        </p>
+
+                        <p>
+                            <label>Número Teléfono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Tu Número" required>
+                        </p>
+
+                        <p class="block">
+                            <label>Tu Mensaje aqui</label>
+                            <textarea name="message" id="message" rows="3" placeholder="..."></textarea>
+                        </p>
+
+                        <p class="block">
+
+                            <button type="submit" class="btn btn-primary" value="Enviar"
+                                id="enviarCorreo">Enviar</button>
+
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Ubicación</h4>
+                    <ul>
+                        <li><i></i> Independencia 665</li>
+                        <li><i></i> Godoy Cruz - Mendoza - Argentina </li>
+                        <li><i></i> Horarios de Atención: Lun-Vie 8:30-17:30</li>
+                    </ul>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6697.278745048111!2d-68.826226!3d-32.934125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c956f0c6d178e1!2sInd%20Mendopleg%20S.A.!5e0!3m2!1ses!2sus!4v1668796006722!5m2!1ses!2sus"
+                        allowfullscreen="" loading="lazy" class="map"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Fin Formulario -->
+    
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
 
@@ -153,5 +239,16 @@
     <!-- Footer -->
 
 </body>
+
+<script>
+    const btnEnvio = document.getElementById('enviarCorreo');
+    btnEnvio.addEventListener('click', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+        window.location.href = `mailto:estebanoller73@gmail.com?subject=Consulta desde la web&body=Nombre%3A${name}%0ATeléfono%3A${phone}%0AMensaje%3A${message}`;
+    })
+</script>
 
 </html>
