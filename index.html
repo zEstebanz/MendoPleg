@@ -498,8 +498,8 @@
     </section>
     <!-- Fin Nuestros Clientes -->
 
-     <!-- Formulario -->
-     <section id="form">
+    <!-- Formulario -->
+    <section id="form">
         <div class="content-form">
 
             <div class="titulo-central">
@@ -512,12 +512,15 @@
                     <form name="form">
                         <p>
                             <label>Nombre</label>
-                            <input type="text" name="fullname" id="name" placeholder="Tu Nombre Completo" required>
+
+                            <input type="text" id="name" name="name"
+                                required>
+
                         </p>
 
                         <p>
                             <label>Teléfono</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Tu Número" required>
+                            <input type="phone" id="phone" name="phone" required>
                         </p>
 
                         <p class="block">
@@ -551,7 +554,7 @@
         </div>
     </section>
     <!-- Fin Formulario -->
-    
+
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted" id="footer">
 
