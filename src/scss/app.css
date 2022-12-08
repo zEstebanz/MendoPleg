@@ -112,6 +112,13 @@ p {
   .nuestros-clientes img {
     width: 30vh;
   }
+  .galeria-info h4 {
+    font-size: 20px;
+  }
+  .galeria-info h4,
+.galeria-info a {
+    font-size: 15px;
+  }
 }
 @media (min-width: 768px) {
   .portada h1 {
@@ -126,6 +133,11 @@ p {
   .servicios h1 {
     padding: 100px;
   }
+  .galeria-info h4,
+.galeria-info a {
+    line-height: 1px;
+    font-size: 20px;
+  }
 }
 @media (min-width: 1024px) {
   .portada h1 {
@@ -137,6 +149,11 @@ p {
   }
   .servicios {
     height: 950px;
+  }
+  .galeria-info h4,
+.galeria-info a {
+    line-height: 1px;
+    font-size: 20px;
   }
 }
 .icon-box i {
@@ -217,7 +234,6 @@ p {
 /* Footer */
 footer {
   padding-top: 10px;
-  margin-top: 50px;
 }
 footer a {
   text-decoration: none;
@@ -244,12 +260,14 @@ footer .email-div h6 {
   max-height: 300px;
   margin-top: 30px;
   box-sizing: border-box;
+  padding-top: 10vh;
 }
 
 .box-2 {
   width: 90%;
   max-height: 533px;
   margin-bottom: 25px;
+  margin-top: 2px;
   box-sizing: border-box;
 }
 
@@ -377,8 +395,6 @@ footer .email-div h6 {
 }
 .galeria .galeria-info h4,
 .galeria .galeria-info a {
-  font-size: 20px;
-  line-height: 1px;
   color: #000;
   font-weight: 90px;
   margin-bottom: 18px;
@@ -448,12 +464,12 @@ footer .email-div h6 {
   color: #fff;
   line-height: 1.6;
   padding: 0 1.5em;
+  background-color: #f8f9fa;
   /* CONTACT INFO */
   /* LARGE SIZE */
 }
 .content-form .titulo-central {
   color: #000000;
-  margin-top: 15vh;
 }
 .content-form .container {
   max-width: 1170px;

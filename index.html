@@ -80,12 +80,14 @@
                             <a class="nav-link active" aria-current="page" href="#clientes">Nuestros Clientes</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#ubicacion">Ubicación</a>
-                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#form">Contactos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#ubicacion">Ubicación</a>
                         </li>
 
                         <li class="nav-item">
@@ -312,7 +314,6 @@
             </div>
             <!-- Fin Foto -->
 
-
             <!-- Foto-->
             <div class="col-lg-4 col-md-6 galeria-item filter-app wow fadeInUp" data-wow-delay="0.2s">
                 <div class="galeria-wrap">
@@ -384,7 +385,6 @@
                     <div class="modal" id="pintura">
                         <h3>Pintura Termoconvertibles</h3>
                         <div class="img">
-
                             <a><img src="src/img/9.png" alt="chispas"></a>
                         </div>
                         <a href="#close" class="close">X</a>
@@ -465,11 +465,14 @@
         <div class="contenedor">
             <div class="titulo-central">
                 <h1>Nuestros Clientes</h1>
-                <p>Entre nuestros clientes se encuentran importantes empresas Provinciales, Nacionales e
+                <p class="info-client">Entre nuestros clientes se encuentran importantes empresas Provinciales,
+                    Nacionales e
                     Internacionales,
                     destacándonos en la manufactura de insumos metálúrgicos a empresas petroleras.
                 </p>
+                <br>
             </div>
+
             <div class="box-2">
                 <div>
                     <div class="center">
@@ -513,8 +516,7 @@
                         <p>
                             <label>Nombre</label>
 
-                            <input type="text" id="name" name="name"
-                                required>
+                            <input type="text" id="name" name="name" required>
 
                         </p>
 
@@ -536,7 +538,7 @@
                         </p>
                     </form>
                 </div>
-                <div class="contact-info">
+                <div class="contact-info" id="ubicacion">
                     <h4>Ubicación</h4>
                     <ul>
                         <li><i></i> Independencia 665</li>
