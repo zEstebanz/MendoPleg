@@ -5,7 +5,9 @@ h1 {
 p {
     text-align: center;
 }
-
+body{
+    scroll-behavior: smooth;
+}
 //Titulos
 .titulo-central {
 
@@ -76,19 +78,77 @@ p {
 
     padding-bottom: 100px;
 
+    .box {
+        height: 500px;
+        background: #f8f9fa;
+        width: 400px;
+        position: relative;
+        
+    }
+
     .icon-box {
         padding: 30px;
         border-radius: 6px;
-        background: #f8f9fa;
         transition: ease-in-out 0.3s;
-    }
 
+    }
 
     .icon-box h4 {
         font-weight: 700;
         margin-bottom: 15px;
         font-size: 18px;
         color: #384046;
+    }
+
+    .icon-box i {
+        color: #3498db;
+        font-size: 28px;
+    }
+    
+    .icon-box h4 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+    
+    .icon-box h4 a {
+        color: #384046;
+        transition: ease-in-out 0.3s;
+    }
+    
+    .icon-box p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    .icon-box:hover {
+        border-color: #fff;
+        box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    }
+    
+    .icon-box:hover h4 a,
+    .icon-box:hover .icon i {
+        color: #3498db;
+    }
+    
+    .button {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        bottom: 0;
+        position: absolute;
+        background-color: #2aaabd;
+        width: 100%;
+        height: 50px;
+        border-radius: 6px;
+        border-color: #000;
     }
 
 }
@@ -213,42 +273,6 @@ p {
         }
     }
 }
-
-
-.icon-box i {
-    color: #3498db;
-    font-size: 28px;
-}
-
-.icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 24px;
-}
-
-.icon-box h4 a {
-    color: #384046;
-    transition: ease-in-out 0.3s;
-}
-
-.icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.icon-box:hover {
-    border-color: #fff;
-    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-}
-
-.icon-box:hover h4 a,
-.icon-box:hover .icon i {
-    color: #3498db;
-}
-
-
-
 
 /* Ubicacion */
 .map {
