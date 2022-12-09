@@ -1,3 +1,4 @@
+/* Globales */
 h1 {
     text-align: center;
 }
@@ -8,7 +9,8 @@ p {
 body{
     scroll-behavior: smooth;
 }
-//Titulos
+
+/* Titulos */
 .titulo-central {
 
     h1 {
@@ -37,8 +39,7 @@ body{
 
 }
 
-
-//Navegacion
+/* Navegacion */
 .navbar {
     position: fixed;
     top: 0;
@@ -169,231 +170,7 @@ body{
     }
 }
 
-/* ---UI Resposive--- */
-
-//Mobile
-@media(max-width: 460px) {
-    .portada {
-        height: 800px;
-        padding-top: 60px;
-
-        background-position: center;
-
-        h1 {
-            font-size: 40px;
-            padding-top: 150px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        .logo {
-            width: 150px;
-            height: 150px;
-        }
-    }
-
-    .nuestros-clientes {
-        img {
-            width: 30vh;
-        }
-    }
-
-    .galeria-info {
-        h4 {
-            font-size: 20px;
-        }
-    }
-
-    .galeria-info {
-
-        h4,
-        a {
-            font-size: 15px;
-        }
-    }
-}
-
-//Tablet
-@media(min-width: 768px) {
-    .portada {
-
-        h1 {
-            font-size: 50px;
-        }
-
-        p {
-            font-size: 30px;
-        }
-    }
-
-    .servicios {
-        height: 800px;
-
-        h1 {
-            padding: 100px;
-        }
-    }
-
-    .galeria-info {
-
-        h4,
-        a {
-            line-height: 1px;
-            font-size: 20px;
-        }
-    }
-}
-
-//Desktop
-@media(min-width: 1024px) {
-    .portada {
-
-        h1 {
-            font-size: 90px;
-        }
-
-        p {
-            padding-top: .40px;
-            font-size: 35px;
-        }
-    }
-
-    .servicios {
-        height: 950px;
-    }
-
-    .galeria-info {
-
-        h4,
-        a {
-            line-height: 1px;
-            font-size: 20px;
-        }
-    }
-}
-
-/* Ubicacion */
-.map {
-    width: 100%;
-    height: 450px;
-    border: 0;
-}
-
-/* 50/50 de ubicacion by flavio*/
-.container-ubicacion {
-    .info {
-        font-size: 20px;
-    }
-}
-
-.contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: space-around;
-
-}
-
-.box {
-    width: 90%;
-    max-height: 400px;
-    margin: 15px 5px;
-    box-sizing: border-box;
-
-    .txt-30 {
-        font-size: 30px;
-    }
-}
-
-.bloque-vertical {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-@media screen and (min-width:999px) {
-    .box {
-        width: 40%;
-    }
-}
-
-/* Footer */
-footer {
-    padding-top: 10px;
-
-    a {
-        text-decoration: none;
-        color: #3c8995;
-    }
-
-    a:hover {
-        color: #2aaabd;
-    }
-
-    h3 {
-        font-size: 25px;
-    }
-
-    .ico {
-        img {
-            width: 15px;
-            height: 15px;
-        }
-    }
-
-    .email-div {
-        h6 {
-            color: #384046;
-            margin-top: 10px;
-        }
-    }
-}
-
-// Responsive en index by flavio
-
-.titulo-central {
-    text-align: center;
-    width: 100%;
-    max-height: 300px;
-    margin-top: 30px;
-    box-sizing: border-box;
-    padding-top: 10vh;
-}
-
-
-.box-2 {
-    width: 90%;
-    max-height: 533px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    box-sizing: border-box;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-}
-
-@media screen and (min-width:999px) {
-    .box-2 {
-        width: 30%;
-        max-height: 420px;
-    }
-}
-
-/** Contacto **/
-.form {
-    margin-top: 50px;
-    height: auto;
-}
-
-/* Gotop */
-
+/* Button WhatsApp */
 .button-WhatsApp-container {
     position: fixed;
     bottom: 4rem;
@@ -457,7 +234,6 @@ footer {
 
 
 /* Galeria */
-
 .galeria {
     background-color: #f8f9fa;
 
@@ -574,7 +350,6 @@ footer {
 }
 
 /* Formulario */
-
 .content-form {
     box-sizing: border-box;
     color: #fff;
@@ -696,5 +471,224 @@ footer {
         .contact-info p {
             text-align: left;
         }
+    }
+}
+
+/* Footer */
+footer {
+    padding-top: 10px;
+
+    a {
+        text-decoration: none;
+        color: #3c8995;
+    }
+
+    a:hover {
+        color: #2aaabd;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .ico {
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .email-div {
+        h6 {
+            color: #384046;
+            margin-top: 10px;
+        }
+    }
+}
+
+/* UI Resposive */
+//Mobile
+@media(max-width: 460px) {
+    .portada {
+        height: 800px;
+        padding-top: 60px;
+
+        background-position: center;
+
+        h1 {
+            font-size: 40px;
+            padding-top: 150px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .nuestros-clientes {
+        img {
+            width: 30vh;
+        }
+    }
+
+    .galeria-info {
+        h4 {
+            font-size: 20px;
+        }
+    }
+
+    .galeria-info {
+
+        h4,
+        a {
+            font-size: 15px;
+        }
+    }
+}
+
+//Tablet
+@media(min-width: 768px) {
+    .portada {
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .servicios {
+        height: 800px;
+
+        h1 {
+            padding: 100px;
+        }
+    }
+
+    .galeria-info {
+
+        h4,
+        a {
+            line-height: 1px;
+            font-size: 20px;
+        }
+    }
+}
+
+//Desktop
+@media(min-width: 1024px) {
+    .portada {
+
+        h1 {
+            font-size: 90px;
+        }
+
+        p {
+            padding-top: .40px;
+            font-size: 35px;
+        }
+    }
+
+    .servicios {
+        height: 950px;
+    }
+
+    .galeria-info {
+
+        h4,
+        a {
+            line-height: 1px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 50/50 de ubicacion by flavio*/
+.container-ubicacion {
+    .info {
+        font-size: 20px;
+    }
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+
+}
+
+.box {
+    width: 90%;
+    max-height: 400px;
+    margin: 15px 5px;
+    box-sizing: border-box;
+
+    .txt-30 {
+        font-size: 30px;
+    }
+}
+
+.bloque-vertical {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:999px) {
+    .box {
+        width: 40%;
+    }
+}
+
+// Responsive en index by flavio
+
+.titulo-central {
+    text-align: center;
+    width: 100%;
+    max-height: 300px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding-top: 10vh;
+}
+
+
+.box-2 {
+    width: 90%;
+    max-height: 533px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:999px) {
+    .box-2 {
+        width: 30%;
+        max-height: 420px;
     }
 }
