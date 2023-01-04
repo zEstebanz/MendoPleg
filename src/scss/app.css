@@ -118,14 +118,17 @@ body {
   font-weight: 500;
   bottom: 0;
   position: absolute;
-  background-color: #2aaabd;
+  background-color: #3c8995;
   width: 100%;
   height: 50px;
   border-radius: 6px;
   border-color: #000;
 }
 .services .button:hover {
-  box-shadow: 0px 0 25px 0 #1cb9d1;
+  background: #3c8995;
+  color: #fff;
+  outline: 0;
+  box-shadow: 0px 0 25px 0 rgba(27, 124, 138, 0.662745098);
 }
 
 /* Nuestros clientes*/
@@ -140,6 +143,11 @@ body {
 .nuestros-clientes img {
   padding: 50px;
   width: 40vh;
+}
+.nuestros-clientes .info-client {
+  color: #000;
+  font-size: large;
+  font-size: 25px;
 }
 
 /* Button WhatsApp */
