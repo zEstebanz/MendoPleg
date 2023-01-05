@@ -76,6 +76,7 @@ body {
   background: #f8f9fa;
   width: 400px;
   position: relative;
+  padding-top: 10px;
 }
 .services .box p {
   color: #000;
