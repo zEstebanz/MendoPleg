@@ -88,6 +88,9 @@ body {
         padding-top: 10px;
         box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.2);
         border-radius: 10px;
+        border-style: outset;
+        border-width: 2px;
+        border-color: transparent #3c8995;
 
         p {
             color: #000;
@@ -107,6 +110,7 @@ body {
         transition: ease-in-out 0.3s;
 
 
+
         .circle {
             border-color: #000 #3c8995;
             border-style: inset;
@@ -118,23 +122,29 @@ body {
             align-items: center;
             border-radius: 50%;
 
-            img {
+            .see-services {
+                height: 50px;
+                position: absolute;
+                top: 10px;
+                left: 44%;
+            }
+
+            .img-services {
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
-                
             }
 
-            img:hover{
+            .img-services:hover {
                 opacity: 1;
                 transition: 0.4s;
             }
 
         }
 
-        
+
     }
-    
+
     .icon-box h4 {
         font-weight: 700;
         margin-bottom: 15px;
@@ -175,6 +185,7 @@ body {
         border-radius: 10px;
         border-color: #000;
         margin: 10px 25%;
+
 
 
     }
