@@ -77,6 +77,8 @@ body {
   width: 400px;
   position: relative;
   padding-top: 10px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 .services .box p {
   color: #000;
@@ -93,7 +95,9 @@ body {
   transition: ease-in-out 0.3s;
 }
 .services .icon-box .circle {
+  border-color: #000 #3c8995;
   border-style: inset;
+  border-width: 5px;
   height: 150px;
   width: 150px;
   margin: 0px auto;
@@ -105,15 +109,9 @@ body {
   height: 100%;
   border-radius: 50%;
 }
-.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #384046;
-}
-.services .icon-box i {
-  color: #3498db;
-  font-size: 28px;
+.services .icon-box .circle img:hover {
+  opacity: 1;
+  transition: 0.4s;
 }
 .services .icon-box h4 {
   font-weight: 700;
@@ -131,7 +129,7 @@ body {
   margin-bottom: 0;
 }
 .services .box:hover {
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: -19px 1px 26px 9px rgba(0, 0, 0, 0.25);
 }
 .services .button {
   text-align: center;
@@ -142,16 +140,15 @@ body {
   bottom: 0;
   position: absolute;
   background-color: #3c8995;
-  width: 100%;
+  width: 50%;
   height: 50px;
-  border-radius: 6px;
+  border-radius: 10px;
   border-color: #000;
+  margin: 10px 25%;
 }
 .services .button:hover {
-  background: #3c8995;
-  color: #fff;
-  outline: 0;
-  background-color: rgba(27, 124, 138, 0.662745098);
+  transition: 0.5s;
+  background-color: #384046;
 }
 
 /* Nuestros clientes*/
