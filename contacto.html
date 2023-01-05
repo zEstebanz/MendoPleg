@@ -22,7 +22,7 @@
     <!-- Navegacion Principal -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#inicio"><img src="src/img/men.gif" alt="mengopleg" width="45px"
+            <a class="navbar-brand" href="index.html"><img src="src/img/men.gif" alt="mengopleg" width="45px"
                     height="40px">MendoPleg</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -31,7 +31,7 @@
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color:white;">Menu</h5>
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color:white;">Menú</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -54,12 +54,14 @@
                             <a class="nav-link active" aria-current="page" href="#clientes">Nuestros Clientes</a>
                         </li>
 
+
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#ubicacion">Ubicación</a>
+                            <a class="nav-link active" aria-current="page" href="#form">Contactos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contacto.html">Contactos</a>
+                            <a class="nav-link active" aria-current="page" href="#ubicacion">Ubicación</a>
                         </li>
 
                         <li class="nav-item">
@@ -120,7 +122,7 @@
         <div class="content-form">
 
             <div class="titulo-central">
-                <h1>Contactos y Ubicación</h1>
+                <h1>Contactos</h1>
             </div>
 
             <div class="contact-wrapper animated bounceInUp">
@@ -128,13 +130,15 @@
                     <h3>Esperamos Tu Consulta</h3>
                     <form name="form">
                         <p>
-                            <label>Nombre Completo</label>
-                            <input type="text" name="fullname" id="name" placeholder="Tu Nombre Completo" required>
+                            <label>Nombre</label>
+
+                            <input type="text" id="name" name="name" required placeholder="...">
+
                         </p>
 
                         <p>
-                            <label>Número Teléfono</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Tu Número" required>
+                            <label>Teléfono</label>
+                            <input type="phone" id="phone" name="phone" required placeholder="...">
                         </p>
 
                         <p class="block">
@@ -150,7 +154,7 @@
                         </p>
                     </form>
                 </div>
-                <div class="contact-info">
+                <div class="contact-info" id="ubicacion">
                     <h4>Ubicación</h4>
                     <ul>
                         <li><i></i> Independencia 665</li>
@@ -158,8 +162,8 @@
                         <li><i></i> Horarios de Atención: Lun-Vie 8:30-17:30</li>
                     </ul>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6697.278745048111!2d-68.826226!3d-32.934125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c956f0c6d178e1!2sInd%20Mendopleg%20S.A.!5e0!3m2!1ses!2sus!4v1668796006722!5m2!1ses!2sus"
-                        allowfullscreen="" loading="lazy" class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26789.067429160077!2d-68.826305!3d-32.934282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c956f0c6d178e1!2sInd%20Mendopleg%20S.A.!5e0!3m2!1ses!2sus!4v1672017040930!5m2!1ses!2sus"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
@@ -168,7 +172,7 @@
         </div>
     </section>
     <!-- Fin Formulario -->
-    
+
     <!-- Servicios -->
     <section class="services" id="services">
         <div class="contenedor">
@@ -177,151 +181,195 @@
                 <h1>Nuestros Servicios</h1>
             </div>
 
+            <!-- Box -->
             <div class="box">
                 <div class="icon-box">
-                    <i>
-                        <h4>Corte y Plegados</h4>
-                    </i>
-                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat tarad limino ata</p>
+                    <figure class="circle">
+                        <a href="#plegados">
+                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <img src="src/img/2.png" class="img-services" alt="img">
+                        </a>
+                    </figure>
+                    <h4>Corte y Plegados</h4>
                 </div>
+                <ul>
+                    <li>lasdrs</li>
+                    <li>asdjf</li>
+                    <li>asdjncx</li>
+                </ul>
+                <a href="contacto.html" class="button">Consultar</a>
             </div>
+            <!-- Fin Box -->
 
+            <!-- Box -->
             <div class="box">
                 <div class="icon-box">
-                    <i>
-                        <h4>Punsados</h4>
-                    </i>
-
-                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat tarad limino ata</p>
+                    <figure class="circle">
+                        <a href="#punsados">
+                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <img src="src/img/4.png" class="img-services" alt="img">
+                        </a>
+                    </figure>
+                    <h4>Punsados</h4>
                 </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, laboriosam id aliquid
+                    esse debitis error culpa, aut maxime animi libero.</p>
+                <a href="contacto.html" class="button">Consultar</a>
             </div>
+            <!-- Fin Box -->
 
+            <!-- Box -->
             <div class="box">
                 <div class="icon-box">
-                    <i>
-                        <h4>Carpinteria Metálica</h4>
-                    </i>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur</p>
+                    <figure class="circle">
+                        <a href="#corte">
+                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <img src="src/img/8.png" class="img-services" alt="img">
+                        </a>
+                    </figure>
+                    <h4>Corte con Pantografo</h4>
                 </div>
+                <ul>
+                    <li>lasdrs</li>
+                    <li>asdjf</li>
+                    <li>asdjncx</li>
+                </ul>
+                <a href="contacto.html" class="button">Consultar</a>
             </div>
+            <!-- Fin Box -->
 
+            <!-- Box -->
             <div class="box">
                 <div class="icon-box">
-                    <i>
-                        <h4>Armado de Estructuras Metálicas</h4>
-                    </i>
-
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum</p>
+                    <figure class="circle">
+                        <a href="#estructuras">
+                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <img src="src/img/3.png" class="img-services" alt="img">
+                        </a>
+                    </figure>
+                    <h4>Armado de Estructuras Metálicas</h4>
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis hic suscipit, exercitationem optio,
+                    error vitae ipsam eaque dolorum aperiam similique soluta quam.</p>
+                <a href="contacto.html" class="button">Consultar</a>
             </div>
-            
+            <!-- Fin Box -->
+
+            <!-- Box -->
             <div class="box">
                 <div class="icon-box">
-                    <i>
-                        <h4>Corte con Pantografo</h4>
-                    </i>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                        voluptatum deleniti atque</p>
+                    <figure class="circle">
+                        <a href="#pintura">
+                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <img src="src/img/9.png" class="img-services" alt="img">
+                        </a>
+                    </figure>
+                    <h4>Pinturas Termoconvertibles</h4>
                 </div>
+                <ul>
+                    <li>lasdrs</li>
+                    <li>asdjf</li>
+                    <li>asdjncx</li>
+                </ul>
+                <a href="contacto.html" class="button">Consultar</a>
             </div>
+            <!-- Fin Box -->
 
+            <!-- Box -->
             <div class="box">
                 <div class="icon-box">
-                    <i>
-                        <h4>Pinturas Termoconvertibles</h4>
-                    </i>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                        nobis est eligendi</p>
+                    <figure class="circle">
+                        <a href="#metales">
+                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <img src="src/img/1.png" class="img-services" alt="img">
+                        </a>
+                    </figure>
+                    <h4>Metales</h4>
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis hic suscipit, exercitationem optio,
+                    error vitae ipsam eaque dolorum aperiam similique soluta quam.</p>
+                <a href="contacto.html" class="button">Consultar</a>
             </div>
+            <!-- Fin Box -->
+
         </div>
     </section>
     <!-- Fin Servicios -->
-    
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
 
-        <section class="">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted" id="footer">
+
+        <section>
             <div class="container text-center text-md-start mt-5">
 
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
                         <h3 class="text-uppercase fw-bold mb-4">
-                            <img src="src/img/men.gif" alt="Logo" width="30px" height="30px"> MendoPleg S.A.
+                            <img src="src/img/men.gif" alt="Logo" width="30px" height="30px">
+                            MendoPleg S.A.
                         </h3>
-                        <p>Soluciones Metalurgicas</p>
                     </div>
 
                     <!-- Correo -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
+                        <div class="ico">
+                            <h6 class="text-uppercase fw-bold mb-4"><img src="src/img/ico/gmail.png" alt="gmail">
+                                Correos</h6>
+                        </div>
 
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Correos
-                        </h6>
+                        <div class="email-div">
+                            <h6>Información General:</h6>
+                            <a
+                                href="mailto:info@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">info@mendopleg.com.ar</a>
+                        </div>
 
-                        <p>
-                        <form action="">Información General:</form>
-                        <a
-                            href="mailto:info@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">info@mendopleg.com.ar</a>
-                        </p>
-                        <p>
-                        <form action="">Ventas:</form>
-
-                        <a
-                            href="mailto:ventas@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">ventas@mendopleg.com.ar</a>
-                        </p>
-
-
-                        <p>
-                        <form action="">Oficina Técnica:</form>
-
-                        <a
-                            href="mailto:otecnica@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">otecnica@mendopleg.com.ar</a>
-                        </p>
+                        <div class="email-div">
+                            <h6>Oficina Técnica:</h6>
+                            <a
+                                href="mailto:otecnica@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">otecnica@mendopleg.com.ar</a>
+                        </div>
                     </div>
 
                     <!-- Telefono -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <div class="ico">
+                            <h6 class="text-uppercase fw-bold mb-4"><img src="src/img/ico/tel.png" alt="tel"> Teléfonos
+                            </h6>
 
-                        <h6 class="text-uppercase fw-bold mb-4">Telefono</h6>
-                        <a href="tel:+54 261 4317741<">261-4317741</a>
-                        <br>
-                        <a href="tel:+54 261 4320713<">261-4320713</a>
+
+                        </div>
+
+                        <div class="email-div">
+                            <h6>Fijo:</h6>
+                            <a href="tel:+54 261 4526620">4526620</a>
+                        </div>
+
+                        <div class="email-div">
+                            <h6>WhatsApp:</h6>
+                            <a href="tel:+54 261 3530413">2613530413</a>
+                        </div>
 
                     </div>
+
                 </div>
 
             </div>
         </section>
 
-
-        <!-- Copyright -->
         <div class="text-center text-light p-4" style="background-color: rgba(0, 0, 0, 0.873);">
-            © 2023 Trabajo Practico Escolar:
-            <a class="text-reset fw-bold" href="#"><br>MendoPleg</a>
-        </div>
-        <!-- Copyright -->
+            <br>
+            <p>© 2023 Trabajo Practico Escolar <a class="text-reset fw-bold" href="#">MendoPleg</a></p>
+            <a href="https://www.linkedin.com/in/esteban-oller-2b7a5a153/" target="_blank""><br>Designed By</a>
+    </div>
 
-    </footer>
-    <!-- Footer -->
+</footer>
+<!-- Footer -->
 
 </body>
 
-<script>
-    const btnEnvio = document.getElementById('enviarCorreo');
-    btnEnvio.addEventListener('click', function (e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-        window.location.href = `mailto:estebanoller73@gmail.com?subject=Consulta desde la web&body=Nombre%3A${name}%0ATeléfono%3A${phone}%0AMensaje%3A${message}`;
-    })
-</script>
+<script src=" src/js/gotop.js"></script>
+                <script src="src/js/enviar.js"></script>
 
 </html>
