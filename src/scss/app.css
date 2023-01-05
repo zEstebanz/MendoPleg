@@ -452,6 +452,10 @@ body {
     text-align: left;
   }
 }
+.content-form .map {
+  height: auto;
+  width: auto;
+}
 
 /* Footer */
 footer {
