@@ -200,6 +200,7 @@ body {
 /* Nuestros clientes*/
 .nuestros-clientes {
     height: auto;
+
     .gc {
         background-color: #62165d;
         margin-top: 50px;
@@ -403,7 +404,6 @@ body {
     line-height: 1.6;
     padding: 0 1.5em;
     background-color: #f8f9fa;
-
     .titulo-central {
         color: #000000;
     }
@@ -498,13 +498,24 @@ body {
         margin: 0 0 1rem 0;
     }
 
+    .columns{
+        background-color: #000;
+        padding: 20px 4em;
+        border-style: solid;
+        border-color: #3c899539;
+    
+        a{
+            text-decoration: none;
+            color: #3c8995;
+        }
+    }
     /* LARGE SIZE */
     @media(min-width: 700px) {
         body {
             padding: 0 4em;
         }
 
-        .contact-wrapper {
+        .contact-wrapper, .columns {
             display: grid;
             grid-template-columns: 2fr 1fr;
         }
@@ -518,11 +529,6 @@ body {
         .contact-info p {
             text-align: left;
         }
-    }
-
-    .map{
-        height: auto;
-        width: auto;
     }
 }
 

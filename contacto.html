@@ -77,48 +77,15 @@
     </nav>
     <!-- Fin Navegacion Principal -->
 
-    <!-- Formulario -->
-    <!-- <section class="form">
-        <h1 class="titulo-central">Contacto</h1>
-
-      
-        <form name="form" netlify>
-
-            <div class="mb-3">
-                <label for="name" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="name" placeholder="Ingresar Nombre" name="name" required>
-            </div>
-
-            <div class="mb-3 mt-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingresar Email" name="email" required>
-            </div>
-
-            <div class="mb-3 mt-3">
-                <label for="phone" class="form-label">Número Telefónico:</label>
-                <input type="phone" class="form-control" id="phone" placeholder="Ingresar Número" name="phone" required>
-            </div>
-
-            <label for="message">Mensaje:</label>
-            <textarea class="form-control message" rows="5" id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn btn-primary" value="Enviar" id="enviarCorreo">Enviar</button>
-        </form>
-
-        <script>
-            const btnEnvio = document.getElementById('enviarCorreo');
-            btnEnvio.addEventListener('click', function (e) {
-                e.preventDefault();
-                const email = document.getElementById('email').value;
-                const name = document.getElementById('name').value;
-                const phone = document.getElementById('phone').value;
-                const message = document.getElementById('message').value;
-                window.location.href = `mailto:estebanoller73@gmail.com?subject=Consulta desde la web&body=Nombre%3A${name}%0ACorreo%3A${email}%0ATeléfono%3A${phone}%0AMensaje%3A${message}`;
-            })
-        </script>
-
-    </section> -->
-    <!-- Fin Formulario -->
+    <!-- Boton WhatsApp -->
+    <div class="button-WhatsApp-container">
+        <div class="WhatsApp-button">
+            <a href="https://api.whatsapp.com/send?phone=2612528276" target="_blank">
+                <img src="src/img/ico/what.png" alt="whatsapp" width="100%" height="100%">
+            </a>
+        </div>
+    </div>
+    <!-- Fin Boton WhatsApp -->
 
     <!-- Formulario -->
     <section id="form">
@@ -168,10 +135,38 @@
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26789.067429160077!2d-68.826305!3d-32.934282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c956f0c6d178e1!2sInd%20Mendopleg%20S.A.!5e0!3m2!1ses!2sus!4v1672017040930!5m2!1ses!2sus"
                         width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-
                 </div>
+
+
+
             </div>
 
+            <!-- Columnas de informacion -->
+            <div class="columns">
+                <div class="col1">
+                    <h4>Correos</h4>
+                    <ul>
+                        <h6>Información General:</h6>
+                        <li><i> <a href="mailto:info@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">info@mendopleg.com.ar</a></i></li>
+                        <br>
+                        <h6>Oficina Técnica:</h6>
+                        <li><i></i><a
+                                href="mailto:otecnica@mendopleg.com.ar?Subject=El%20asunto%20del%20mail">otecnica@mendopleg.com.ar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <h4>Teléfonos</h4>
+                    <ul>
+                        <h6>Fijo:</h6>
+                        <li><i></i><a href="tel:+54 261 4526620">4526620</a></li>
+                        <br>
+                        <h6>WhatsApp:</h6>
+                        <li><i></i><a href="tel:+54 261 3530413">2613530413</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fin Columnas de informacion -->
         </div>
     </section>
     <!-- Fin Formulario -->
@@ -189,7 +184,7 @@
                 <div class="icon-box">
                     <figure class="circle">
                         <a href="#plegados">
-                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <!-- <img src="src/img/ico/ver.png" class="see-services" alt="see"> -->
                             <img src="src/img/2.png" class="img-services" alt="img">
                         </a>
                     </figure>
@@ -209,7 +204,7 @@
                 <div class="icon-box">
                     <figure class="circle">
                         <a href="#punsados">
-                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <!-- <img src="src/img/ico/ver.png" class="see-services" alt="see"> -->
                             <img src="src/img/4.png" class="img-services" alt="img">
                         </a>
                     </figure>
@@ -226,7 +221,7 @@
                 <div class="icon-box">
                     <figure class="circle">
                         <a href="#corte">
-                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <!-- <img src="src/img/ico/ver.png" class="see-services" alt="see"> -->
                             <img src="src/img/8.png" class="img-services" alt="img">
                         </a>
                     </figure>
@@ -246,7 +241,7 @@
                 <div class="icon-box">
                     <figure class="circle">
                         <a href="#estructuras">
-                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <!-- <img src="src/img/ico/ver.png" class="see-services" alt="see"> -->
                             <img src="src/img/3.png" class="img-services" alt="img">
                         </a>
                     </figure>
@@ -263,7 +258,7 @@
                 <div class="icon-box">
                     <figure class="circle">
                         <a href="#pintura">
-                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <!-- <img src="src/img/ico/ver.png" class="see-services" alt="see"> -->
                             <img src="src/img/9.png" class="img-services" alt="img">
                         </a>
                     </figure>
@@ -283,7 +278,7 @@
                 <div class="icon-box">
                     <figure class="circle">
                         <a href="#metales">
-                            <img src="src/img/ico/ver.png" class="see-services" alt="see">
+                            <!-- <img src="src/img/ico/ver.png" class="see-services" alt="see"> -->
                             <img src="src/img/1.png" class="img-services" alt="img">
                         </a>
                     </figure>
@@ -318,7 +313,7 @@
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                         <div class="ico">
-                            <h6 class="text-uppercase fw-bold mb-4"><img src="src/img/ico/gmail.png" alt="gmail">
+                            <h6 class="text-uppercase fw-bold mb-4">
                                 Correos</h6>
                         </div>
 
@@ -338,10 +333,8 @@
                     <!-- Telefono -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <div class="ico">
-                            <h6 class="text-uppercase fw-bold mb-4"><img src="src/img/ico/tel.png" alt="tel"> Teléfonos
+                            <h6 class="text-uppercase fw-bold mb-4">Teléfonos
                             </h6>
-
-
                         </div>
 
                         <div class="email-div">
@@ -367,12 +360,12 @@
             <a href="https://www.linkedin.com/in/esteban-oller-2b7a5a153/" target="_blank""><br>Designed By</a>
     </div>
 
-</footer>
-<!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
 </body>
 
-<script src=" src/js/gotop.js"></script>
-                <script src="src/js/enviar.js"></script>
+    <script src=" src/js/ws.js"></script>
+    <script src="src/js/enviar.js"></script>
 
 </html>
