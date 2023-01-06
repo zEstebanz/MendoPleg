@@ -14,6 +14,13 @@ body {
 /* Titulos */
 .titulo-central {
 
+    text-align: center;
+    width: 100%;
+    max-height: 300px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding-top: 10vh;
+
     h1 {
         font-size: 32px;
         font-weight: 600;
@@ -80,6 +87,7 @@ body {
 
     padding-bottom: 100px;
     background-color: #fff;
+
     .box {
         height: 500px;
         background: #f8f9fa;
@@ -185,14 +193,24 @@ body {
         border-radius: 10px;
         border-color: #000;
         margin: 10px 25%;
-
-
-
     }
 
     .button:hover {
         transition: 0.5s;
         background-color: #384046;
+    }
+
+    .box-2 {
+        width: 90%;
+        max-height: 533px;
+        margin-bottom: 25px;
+        margin-top: 2px;
+        box-sizing: border-box;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -404,6 +422,7 @@ body {
     line-height: 1.6;
     padding: 0 1.5em;
     background-color: #f8f9fa;
+
     .titulo-central {
         color: #000000;
     }
@@ -537,6 +556,7 @@ body {
 /* Footer */
 footer {
     padding-top: 10px;
+
     a {
         text-decoration: none;
         color: #3c8995;
@@ -608,6 +628,14 @@ footer {
             font-size: 15px;
         }
     }
+
+    .nuestros-clientes {
+        .info-client {
+            color: #000;
+            font-size: large;
+            font-size: 15px;
+        }
+    }
 }
 
 //Tablet
@@ -639,6 +667,15 @@ footer {
             font-size: 20px;
         }
     }
+
+    .nuestros-clientes {
+        .info-client {
+            color: #000;
+            font-size: large;
+            font-size: 20px;
+        }
+    }
+
 }
 
 //Desktop
@@ -667,22 +704,13 @@ footer {
             font-size: 20px;
         }
     }
-}
 
-
-
-
-
-
-
-
-
-
-
-/* 50/50 de ubicacion by flavio*/
-.container-ubicacion {
-    .info {
-        font-size: 20px;
+    .nuestros-clientes {
+        .info-client {
+            color: #000;
+            font-size: large;
+            font-size: 25px;
+        }
     }
 }
 
@@ -707,42 +735,10 @@ footer {
     }
 }
 
-.bloque-vertical {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
 @media screen and (min-width:999px) {
     .box {
         width: 40%;
     }
-}
-
-// Responsive en index by flavio
-
-.titulo-central {
-    text-align: center;
-    width: 100%;
-    max-height: 300px;
-    margin-top: 30px;
-    box-sizing: border-box;
-    padding-top: 10vh;
-}
-
-
-.box-2 {
-    width: 90%;
-    max-height: 533px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    box-sizing: border-box;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
 }
 
 @media screen and (min-width:999px) {
