@@ -88,6 +88,7 @@ body {
     padding-bottom: 100px;
     background-color: #fff;
 
+    
     .box {
         height: 500px;
         background: #f8f9fa;
@@ -147,10 +148,7 @@ body {
                 opacity: 1;
                 transition: 0.4s;
             }
-
         }
-
-
     }
 
     .icon-box h4 {
@@ -200,19 +198,18 @@ body {
         background-color: #384046;
     }
 
-    .box-2 {
-        width: 90%;
-        max-height: 533px;
-        margin-bottom: 25px;
-        margin-top: 2px;
-        box-sizing: border-box;
-    }
+}
+.box-2 {
+    width: 90%;
+    max-height: 533px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    box-sizing: border-box;
+}
 
-    .center {
-        display: flex;
-        justify-content: center;
-    }
-
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 /* Nuestros clientes*/
@@ -586,6 +583,7 @@ footer {
 }
 
 /* UI Resposive */
+
 //Mobile
 @media(max-width: 460px) {
     .portada {
@@ -628,14 +626,6 @@ footer {
             font-size: 15px;
         }
     }
-
-    .nuestros-clientes {
-        .info-client {
-            color: #000;
-            font-size: large;
-            font-size: 15px;
-        }
-    }
 }
 
 //Tablet
@@ -667,15 +657,6 @@ footer {
             font-size: 20px;
         }
     }
-
-    .nuestros-clientes {
-        .info-client {
-            color: #000;
-            font-size: large;
-            font-size: 20px;
-        }
-    }
-
 }
 
 //Desktop
@@ -704,14 +685,6 @@ footer {
             font-size: 20px;
         }
     }
-
-    .nuestros-clientes {
-        .info-client {
-            color: #000;
-            font-size: large;
-            font-size: 25px;
-        }
-    }
 }
 
 .contenedor {
@@ -721,7 +694,6 @@ footer {
     flex-direction: row;
     flex-flow: wrap;
     justify-content: space-around;
-
 }
 
 .box {
@@ -734,13 +706,11 @@ footer {
         font-size: 30px;
     }
 }
-
 @media screen and (min-width:999px) {
     .box {
         width: 40%;
     }
 }
-
 @media screen and (min-width:999px) {
     .box-2 {
         width: 30%;

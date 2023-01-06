@@ -168,14 +168,16 @@ body {
   transition: 0.5s;
   background-color: #384046;
 }
-.services .box-2 {
+
+.box-2 {
   width: 90%;
   max-height: 533px;
   margin-bottom: 25px;
   margin-top: 2px;
   box-sizing: border-box;
 }
-.services .center {
+
+.center {
   display: flex;
   justify-content: center;
 }
@@ -534,11 +536,6 @@ footer .email-div h6 {
 .galeria-info a {
     font-size: 15px;
   }
-  .nuestros-clientes .info-client {
-    color: #000;
-    font-size: large;
-    font-size: 15px;
-  }
 }
 @media (min-width: 768px) {
   .portada h1 {
@@ -558,11 +555,6 @@ footer .email-div h6 {
     line-height: 1px;
     font-size: 20px;
   }
-  .nuestros-clientes .info-client {
-    color: #000;
-    font-size: large;
-    font-size: 20px;
-  }
 }
 @media (min-width: 1024px) {
   .portada h1 {
@@ -579,11 +571,6 @@ footer .email-div h6 {
 .galeria-info a {
     line-height: 1px;
     font-size: 20px;
-  }
-  .nuestros-clientes .info-client {
-    color: #000;
-    font-size: large;
-    font-size: 25px;
   }
 }
 .contenedor {
